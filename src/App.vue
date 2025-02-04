@@ -1,91 +1,32 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
-import LayoutHeader from "./components/LayoutHeader.vue"
+<script setup>
+import ButtonUI from "./components/ButtonUI.vue";
 </script>
 
 <template>
-  <!-- <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header> -->
-  <div class="flex flex-col min-h-full">
-    <!-- <LayoutHeader /> -->
-    <header class="px-5 bg-[#1g1g1g] text-[#ccc] text-2xl h-[50px] flex items-center">
-      <h1>TaskFlow</h1>
+  <div class="flex flex-col min-h-full bg-red-500">
+    <header class="px-5 bg-[#181818]">
+      <h1
+        class="h-[50px] text-2xl flex items-center m-0 text-white font-semibold"
+      >
+        TaskFlow
+      </h1>
     </header>
-      <RouterView />
+    <main class="bg-[#222] flex-1 flex flex-col p-3">
+      <!-- Container -->
+      <div
+        class="max-w-[1024px] flex-1 w-full mx-auto rounded-lg bg-[#333] border border-[#444]"
+      >
+        <!-- container header -->
+        <div
+          class="h-[60px] px-5 text-[#aaa] border-b border-[#444] flex items-center"
+        >
+          <div class="text-xl">Tasklists</div>
+          <div class="flex-1"></div>
+          <ButtonUI>Create New</ButtonUI>
+        </div>
+        <!-- Container body -->
+        <div>Do Some Workout</div>
+      </div>
+    </main>
   </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>

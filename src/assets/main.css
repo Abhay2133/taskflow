@@ -1,7 +1,0 @@
-@import "tailwindcss";
-@import './base.css';
-
-body, html, #app {
-  margin: 0;
-  height: 100svh;
-}
