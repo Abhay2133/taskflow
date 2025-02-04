@@ -33,7 +33,7 @@
             style="box-shadow: inset 0 0 4px 1px #111"
             @keyup.enter="addTask"
           />
-          <ButtonUI :class="`rounded-full`">Add</ButtonUI>
+          <!-- <ButtonUI :class="`rounded-full`">Add</ButtonUI> -->
         </div>
         <!-- Tasks List -->
         <div class="flex flex-col px-5">
