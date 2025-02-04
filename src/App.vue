@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import ButtonUI from "./components/ButtonUI.vue";
 </script>
 
 <template>
