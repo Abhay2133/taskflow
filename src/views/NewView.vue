@@ -77,7 +77,6 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import ButtonUI from "../components/ButtonUI.vue";
 import { ArrowLeft, EllipsisVertical, Trash } from "lucide-vue-next";
 
 const newTask = ref("");
