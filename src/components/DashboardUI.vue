@@ -18,6 +18,8 @@ import ButtonUI from "./ButtonUI.vue";
       <RouterLink to="/new"><ButtonUI>Create New</ButtonUI></RouterLink>
     </div>
     <!-- Container body -->
-    <div>Do Some Workout</div>
+    <div></div>
+    <!-- Placeholder -->
+    <div class="text-center pt-16 text-[#666] text-xl">Tasklists will appear here !</div>
   </div>
 </template>
