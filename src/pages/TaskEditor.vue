@@ -94,9 +94,13 @@
       </div>
     </div>
   </main>
+  <BaseModal>
+    Hello
+  </BaseModal>
 </template>
 
 <script setup lang="ts">
+import BaseModal from "@/components/BaseModal.vue";
 import { nextTick, ref } from "vue";
 import {
   ArrowLeft,
